@@ -247,6 +247,15 @@
             "rid": "win"
           }
         }
+      },
+      "SiteParser.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SiteParser.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SiteParser.Core.dll": {}
+        }
       }
     }
   },
@@ -812,12 +821,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SiteParser.Core/1.0.0": {
+      "type": "project",
+      "path": "../SiteParser.Core/SiteParser.Core.csproj",
+      "msbuildProject": "../SiteParser.Core/SiteParser.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AngleSharp >= 0.12.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "SiteParser.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -849,7 +864,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\shamy\\YandexDisk\\ПРОГРОМИРУЕМ, ЗНЧТ\\ГирьИл\\Web\\SiteParser\\SiteParser.Core\\SiteParser.Core.csproj": {
+              "projectPath": "C:\\Users\\shamy\\YandexDisk\\ПРОГРОМИРУЕМ, ЗНЧТ\\ГирьИл\\Web\\SiteParser\\SiteParser.Core\\SiteParser.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SiteParser.Core.Habra;
+using System;
 
 namespace SiteParser
 {

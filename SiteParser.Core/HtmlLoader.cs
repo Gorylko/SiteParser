@@ -1,7 +1,7 @@
-﻿using System.Net;
+﻿using SiteParser.Core.Interfaces;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using SiteParser.Core.Interfaces;
 
 namespace SiteParser.Core
 {
@@ -13,7 +13,7 @@ namespace SiteParser.Core
         public HtmlLoader(IParserSettings settings)
         {
             client = new HttpClient();
-            Url = $"{settings.BaseUrl}/{settings.Prefix}";
+            Url = $"{settings.BaseUrl}{settings.Prefix}/";
         }
 
         public async Task<string> GetSourceByPageId(int id)

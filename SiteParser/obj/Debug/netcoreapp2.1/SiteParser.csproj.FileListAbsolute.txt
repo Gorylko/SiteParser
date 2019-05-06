@@ -6,3 +6,10 @@ C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\Si
 C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.csproj.CoreCompileInputs.cache
 C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.AssemblyInfoInputs.cache
 C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.AssemblyInfo.cs
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\bin\Debug\netcoreapp2.1\SiteParser.pdb
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\bin\Debug\netcoreapp2.1\SiteParser.Core.dll
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\bin\Debug\netcoreapp2.1\SiteParser.Core.pdb
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\bin\Debug\netcoreapp2.1\SiteParser.Core.dll.config
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.csproj.CopyComplete
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.dll
+C:\Users\shamy\YandexDisk\ПРОГРОМИРУЕМ, ЗНЧТ\ГирьИл\Web\SiteParser\SiteParser\obj\Debug\netcoreapp2.1\SiteParser.pdb
