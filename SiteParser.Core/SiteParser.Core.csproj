@@ -53,6 +53,7 @@
     <Compile Include="Habra\HabraParser.cs" />
     <Compile Include="Habra\HabraSettings.cs" />
     <Compile Include="KinoPoisk\KinoParser.cs" />
+    <Compile Include="KinoPoisk\KinoSettings.cs" />
     <Compile Include="ParserWorker.cs" />
     <Compile Include="HtmlLoader.cs" />
     <Compile Include="Interfaces\IParser.cs" />

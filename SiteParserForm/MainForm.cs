@@ -2,6 +2,7 @@
 using SiteParser.Core.Habra;
 using System;
 using System.Windows.Forms;
+using SiteParser.Core.KinoPoisk;
 
 namespace SiteParserForm
 {
@@ -11,10 +12,6 @@ namespace SiteParserForm
         public MainForm()
         {
             InitializeComponent();
-            parser = new ParserWorker<string[]>(new HabraParser());
-
-            parser.OnCompleted += Parser_OnComplited;
-            parser.OnNewData += Parser_OnNewData;
         }
 
         private void Parser_OnNewData(object arg1, string[] arg2)
@@ -29,7 +26,24 @@ namespace SiteParserForm
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
-            parser.Settings = new HabraSettings((int)NumericStart.Value, (int)NumericEnd.Value);
+            switch(ComboBoxSites.SelectedItem.ToString())
+            {
+                case "Habra":
+                    parser = new ParserWorker<string[]>(new HabraParser());
+                    parser.Settings = new HabraSettings((int)NumericStart.Value, (int)NumericEnd.Value);
+                    break;
+                case "Kino":
+                    parser = new ParserWorker<string[]>(new KinoParser());
+                    parser.Settings = new KinoSettings();
+                    break;
+                default:
+                    parser = new ParserWorker<string[]>(new HabraParser());
+                    parser.Settings = new HabraSettings((int)NumericStart.Value, (int)NumericEnd.Value);
+                    break;
+            }
+
+            parser.OnCompleted += Parser_OnComplited;
+            parser.OnNewData += Parser_OnNewData;
             parser.Start();
         }
 
@@ -54,6 +68,11 @@ namespace SiteParserForm
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
         {
 
         }

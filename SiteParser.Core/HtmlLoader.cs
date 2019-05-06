@@ -13,10 +13,10 @@ namespace SiteParser.Core
         public HtmlLoader(IParserSettings settings)
         {
             client = new HttpClient();
-            Url = $"{settings.BaseUrl}{settings.Prefix}/";
+            Url = $"{settings.BaseUrl}{settings.Prefix}";
         }
 
-        public async Task<string> GetSourceByPageId(int id)
+        public async Task<string> GetSourceByPageId(int id = 1)
         {
             var currentUrl = Url.Replace("{CurrentId}", id.ToString());
             var response = await client.GetAsync(currentUrl);
