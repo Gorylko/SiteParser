@@ -59,6 +59,8 @@
     <Compile Include="Interfaces\IParser.cs" />
     <Compile Include="Interfaces\IParserSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vk\VkParser.cs" />
+    <Compile Include="Vk\VkSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

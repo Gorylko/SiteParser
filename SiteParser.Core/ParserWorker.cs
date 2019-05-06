@@ -79,7 +79,7 @@ namespace SiteParser.Core
 
         private async void Worker()
         {
-            for(int i = Settings.StartPoint; i < Settings.EndPoint; i++)
+            for(int i = Settings.StartPoint; i <= Settings.EndPoint; i++)
             {
                 if(!isActive)
                 {

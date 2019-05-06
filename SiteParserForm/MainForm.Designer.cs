@@ -38,6 +38,8 @@
             this.ButtonAbort = new System.Windows.Forms.Button();
             this.ComboBoxSites = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.TextBoxId = new System.Windows.Forms.TextBox();
+            this.labelId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NumericStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericEnd)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +51,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ListTitles.FormattingEnabled = true;
             this.ListTitles.ItemHeight = 16;
-            this.ListTitles.Location = new System.Drawing.Point(12, 12);
+            this.ListTitles.Location = new System.Drawing.Point(12, 17);
             this.ListTitles.Name = "ListTitles";
             this.ListTitles.Size = new System.Drawing.Size(332, 420);
             this.ListTitles.TabIndex = 0;
@@ -88,7 +90,6 @@
             0,
             0,
             0});
-            this.NumericStart.ValueChanged += new System.EventHandler(this.NumericStart_ValueChanged);
             // 
             // NumericEnd
             // 
@@ -107,7 +108,6 @@
             0,
             0,
             0});
-            this.NumericEnd.ValueChanged += new System.EventHandler(this.NumericEnd_ValueChanged);
             // 
             // ButtonStart
             // 
@@ -137,27 +137,52 @@
             this.ComboBoxSites.FormattingEnabled = true;
             this.ComboBoxSites.Items.AddRange(new object[] {
             "Habra",
-            "Kino"});
-            this.ComboBoxSites.Location = new System.Drawing.Point(379, 251);
+            "Kino",
+            "Vk"});
+            this.ComboBoxSites.Location = new System.Drawing.Point(379, 224);
             this.ComboBoxSites.Name = "ComboBoxSites";
             this.ComboBoxSites.Size = new System.Drawing.Size(121, 24);
             this.ComboBoxSites.TabIndex = 7;
+            this.ComboBoxSites.SelectionChangeCommitted += new System.EventHandler(this.ComboBoxSites_SelectionChangeCommitted);
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(376, 231);
+            this.label3.Location = new System.Drawing.Point(376, 204);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Site";
+            // 
+            // TextBoxId
+            // 
+            this.TextBoxId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TextBoxId.Location = new System.Drawing.Point(379, 308);
+            this.TextBoxId.Name = "TextBoxId";
+            this.TextBoxId.Size = new System.Drawing.Size(100, 22);
+            this.TextBoxId.TabIndex = 9;
+            this.TextBoxId.Visible = false;
+            this.TextBoxId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // labelId
+            // 
+            this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelId.AutoSize = true;
+            this.labelId.Location = new System.Drawing.Point(376, 288);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(19, 17);
+            this.labelId.TabIndex = 10;
+            this.labelId.Text = "Id";
+            this.labelId.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 450);
+            this.Controls.Add(this.labelId);
+            this.Controls.Add(this.TextBoxId);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ComboBoxSites);
             this.Controls.Add(this.ButtonAbort);
@@ -189,6 +214,8 @@
         private System.Windows.Forms.Button ButtonAbort;
         private System.Windows.Forms.ComboBox ComboBoxSites;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TextBoxId;
+        private System.Windows.Forms.Label labelId;
     }
 }
 

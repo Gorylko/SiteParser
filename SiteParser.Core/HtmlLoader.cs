@@ -16,6 +16,8 @@ namespace SiteParser.Core
             Url = $"{settings.BaseUrl}{settings.Prefix}";
         }
 
+        //public async Task<string> GetSource()
+
         public async Task<string> GetSourceByPageId(int id = 1)
         {
             var currentUrl = Url.Replace("{CurrentId}", id.ToString());

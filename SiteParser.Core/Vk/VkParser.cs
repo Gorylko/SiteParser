@@ -3,15 +3,15 @@ using SiteParser.Core.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SiteParser.Core.KinoPoisk
+namespace SiteParser.Core.Vk
 {
-    public class KinoParser : IParser<string[]>
+    public class VkParser : IParser<string[]>
     {
         public string[] Parse(IHtmlDocument document)
         {
             var list = new List<string>();
 
-            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("all"));
+            var items = document.QuerySelectorAll("h2");
 
             foreach(var item in items)
             {

@@ -1,16 +1,17 @@
 ﻿using SiteParser.Core.Interfaces;
 
-namespace SiteParser.Core.KinoPoisk
+namespace SiteParser.Core.Vk
 {
-    public class KinoSettings : IParserSettings
+    public class VkSettings : IParserSettings
     {
-        public KinoSettings(int start, int end)
+        public VkSettings(int start, int end, string id)
         {
             StartPoint = start;
             EndPoint = end;
+            BaseUrl = BaseUrl.Replace("{Id}", id);
         }
 
-        public string BaseUrl { get; set; } = "https://www.kinopoisk.ru/top/";
+        public string BaseUrl { get; set; } = "https://vk.com/{Id}";
 
         public string Prefix { get; set; } = "";
 
