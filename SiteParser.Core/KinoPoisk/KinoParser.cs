@@ -11,7 +11,7 @@ namespace SiteParser.Core.KinoPoisk
         {
             var list = new List<string>();
 
-            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("all"));
+            var items = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("all") && item.TextContent.Contains("("));
 
             foreach(var item in items)
             {
