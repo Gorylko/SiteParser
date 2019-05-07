@@ -11,12 +11,15 @@ namespace SiteParser.Core.Vk
         {
             var list = new List<string>();
 
-            var items = document.QuerySelectorAll("h2");
+            list.Add("Кто : " + document.QuerySelectorAll("h2")[0].TextContent);
+            list.AddRange(new string[] { "", "Прочая инфа :"});
+            var items = document.QuerySelectorAll("a").Where(item => item.TextContent != null && item.TextContent != string.Empty);
 
             foreach(var item in items)
             {
                 list.Add(item.TextContent);
             }
+
             return list.ToArray();
         }
     }

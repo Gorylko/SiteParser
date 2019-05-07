@@ -247,15 +247,6 @@
             "rid": "win"
           }
         }
-      },
-      "SiteParser.Core/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/SiteParser.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SiteParser.Core.dll": {}
-        }
       }
     }
   },
@@ -821,18 +812,13 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "SiteParser.Core/1.0.0": {
-      "type": "project",
-      "path": "../SiteParser.Core/SiteParser.Core.csproj",
-      "msbuildProject": "../SiteParser.Core/SiteParser.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AngleSharp >= 0.12.0",
-      "Microsoft.NETCore.App >= 2.1.0",
-      "SiteParser.Core >= 1.0.0"
+      "C:\\Users\\shamy\\YandexDisk\\ПРОГРОМИРУЕМ, ЗНЧТ\\ГирьИл\\Web\\SiteParser\\SiteParser.Core\\SiteParser.Core.csproj",
+      "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
@@ -897,5 +883,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Не удалось найти сведения о проекте для \"C:\\Users\\shamy\\YandexDisk\\ПРОГРОМИРУЕМ, ЗНЧТ\\ГирьИл\\Web\\SiteParser\\SiteParser.Core\\SiteParser.Core.csproj\". В Visual Studio, возможно, причина в том, что проект выгружен или не является частью текущего решения. В ином случае файл проекта может быть недопустим, или в нем могут отсутствовать целевые объекты, необходимые для восстановления.",
+      "libraryId": "C:\\Users\\shamy\\YandexDisk\\ПРОГРОМИРУЕМ, ЗНЧТ\\ГирьИл\\Web\\SiteParser\\SiteParser.Core\\SiteParser.Core.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

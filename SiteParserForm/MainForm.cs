@@ -22,7 +22,7 @@ namespace SiteParserForm
 
         private void Parser_OnComplited(object obj)
         {
-            MessageBox.Show("All works done!");
+            //MessageBox.Show("All works done!");
         }
 
         private void ButtonStart_Click(object sender, EventArgs e)
@@ -97,6 +97,11 @@ namespace SiteParserForm
                 NumericEnd.Visible = true;
                 label2.Visible = true;
             }
+        }
+
+        private void ClearListBox(object sender, EventArgs e)
+        {
+            ListTitles.Items.Clear();
         }
     }
 }
